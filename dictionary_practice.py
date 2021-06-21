@@ -79,4 +79,42 @@ del shoe_inventory["Nikes"]
 del shoe_inventory["Yeezy"
 print(shoe_inventory)
                    
-                   
+
+#lab4 
+
+def total_price(item1, item2):
+    sum = Food_price[item1] + Food_price[item2]
+    print("The total price of",item1, "and", item2, "is",  sum)
+    return sum 
+total_price("Chicken", "Cheese")
+
+
+def price_difference(item1, item2):
+    difference = Food_price[item1] - Food_price[item2]
+    print("The difference between", item1, "and", item2, "is", abs(round(difference, 2)))
+    return difference
+price_difference("Cheese", "Chicken")
+
+
+def Restock(shoe, amount):
+    new_shoe = Shoe_amount[shoe] * amount 
+    Shoe_amount["Jordan_13"] = new_shoe
+    return(Shoe_amount)
+Restock("Jordan_13", 3)
+
+
+def clearance_sale(shoe, amount):
+    new_shoe = Shoe_amount[shoe] / amount 
+    Shoe_amount["Air_Max"] = new_shoe 
+    return(Shoe_amount)
+clearance_sale("Air_Max", 3)
+
+
+def switch_numbers(nameA, nameB):
+    new_shoe1 = People_PhoneNumber[nameA
+    new_shoe2 = People_PhoneNumber[nameB]
+    phone_numbers["friend1"] = new_shoeA
+    phone_numbers["friend2"] = new_shoeB
+    print(People_PhoneNumber)
+
+switch_numbers("friend1", "friend2")

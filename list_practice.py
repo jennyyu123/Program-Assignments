@@ -29,3 +29,36 @@ print(City_list)
 alphabet_list= ["a", "b", "c", "d", "e", "f", "g", "h", "i","j", "k"]
 print (alphabet_list)
 
+#lab4
+
+def cities():
+    longest_city = "a"
+    i = 0 
+    while i < len(city_list):
+        print(city_list[i])
+        x = city_list[i]
+        if len(city_list[i]) > len(longest_city):
+            longest_city = x 
+        i += 1
+    return((longest_city))
+cities()
+
+def cities_organized():
+    for i in range(0, 16):
+        b = city_list[i]
+        a = city_list[i + 1]
+        if len(b) >= len(a):
+            i += 1
+        else:
+            city_list.remove(b)
+            city_list.append(b)
+    return city_list
+cities_organized()
+
+def four_letter_animals():
+    i = 0
+    while i < len(animal_list):
+        if len(animal_list[i]) == 4:
+            print(animal_list[i])
+        i = i + 1
+four_letter_animals()
